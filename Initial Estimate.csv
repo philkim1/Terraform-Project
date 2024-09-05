@@ -1,0 +1,23 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,8919.83,107037.96,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Initial Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,,Number of requests (HTTPS) ( million per month)
+Initial Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,37.35,448.20,USD,,Number of NAT Gateways (1)
+Initial Estimate,US East (N. Virginia),,Public IPv4 Address,0,7.3,87.60,USD,,"Number of In-use public IPv4 addresses (2), Number of Idle public IPv4 addresses (0)"
+Initial Estimate,US East (N. Virginia),,Gateway Load Balancer,0,31.03,372.36,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (1 GB per hour), Average number of new connections/flows (2 per second), Average connection/flow duration (3 seconds)"
+Initial Estimate,US East (N. Virginia),,Amazon EC2 ,0,8596.48,103157.76,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.12xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled)"
+Initial Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,206.6,2479.20,USD,,"Storage amount (100 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m1.small), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+Initial Estimate,US East (N. Virginia),,Application Load Balancer,0,37.52,450.24,USD,,Number of Application Load Balancers (2)
+Initial Estimate,US East (N. Virginia),,S3 Standard,0,2.3,27.60,USD,,S3 Standard storage (100 GB per month)
+Initial Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,1.25,15.00,USD,,S3 Standard-IA storage (100 GB per month)
+Initial Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
