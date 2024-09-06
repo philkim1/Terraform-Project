@@ -1,0 +1,29 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,18828.15,225937.8,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0,USD,,
+Increased Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.3,399.6,USD,,Number of NAT Gateways (1)
+Increased Estimate,US East (N. Virginia),,Public IPv4 Address,0,7.3,87.6,USD,,Number of In-use public IPv4 addresses (2)
+Increased Estimate,US East (N. Virginia),,Gateway Load Balancer,0,32.92,395.04,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (2), Average number of new connections/flows (2 per second), Average connection/flow duration (1 seconds), Total processed bytes (10 GB per month)"
+Increased Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,206.6,2479.2,USD,,"Storage amount (100 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m1.small), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+Increased Estimate,US East (N. Virginia),,Application Load Balancer,0,37.52,450.24,USD,,Number of Application Load Balancers (2)
+Increased Estimate,US East (N. Virginia),,S3 Standard,0,2.3,27.6,USD,,S3 Standard storage (100 GB per month)
+Increased Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,1.25,15,USD,,S3 Standard-IA storage (100 GB per month)
+Increased Estimate,US East (N. Virginia),,Amazon EC2 ,0,18506.96,222083.52,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5a.16xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Rationale,,,,,,,,,
+"With double the budget, I decided to add redundancy by adding 4 more EC2 instances, so that there would be backup servers for both AZ's.",,,,,,,,,
+The performance of the instances was increased from m5.12xlarge to m5a.16xlarge and the pricing strategy was changed to on-demand from standard reserve,,,,,,,,,
+"With these changes we can handle peak traffic at any time, even if both sets of servers are down and with extra performance just in case.",,,,,,,,,
